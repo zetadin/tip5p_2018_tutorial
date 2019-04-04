@@ -9,7 +9,7 @@
 [atomtypes]
 ;name     mass      charge   ptype    sigma        epsilon
 OW     15.99940    -0.674858   A    0.314000  0.750000
-HW     1.00800      0.414882   A    0.22      0.000000
+HW     1.00800      0.414882   A    0.000000  0.000000
 LW     0.0         -0.077453   D    0.000000  0.000000
 
 #include "TIP5P2018.itp"
