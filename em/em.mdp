@@ -1,0 +1,38 @@
+
+; RUN CONTROL PARAMETERS
+integrator	= steep		; Algorithm (steep = steepest descent minimization)
+emtol		= 500.0  	; Stop minimization when the maximum force < 500.0 kJ/mol/nm
+emstep      = 0.0001    ; Energy step size
+nsteps		= 10000
+
+; mode for center of mass motion removal
+comm-mode                = Linear
+; number of steps for center of mass motion removal
+nstcomm                  = 1
+nstcalcenergy            = 1
+
+
+; Bond parameters
+continuation	= no	; fresh simulation
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff_scheme            = verlet
+nstlist                  = 1
+ns_type                  = grid
+pbc                      = xyz
+rlist                    = 0.85
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+coulombtype              = PME
+pme_order		 		 = 4
+fourierspacing		 	 = 0.16
+rcoulomb                 = 0.85
+vdw-type                 = Cut-off
+rvdw                     = 0.85
+
+
+; Dispersion correction
+DispCorr     = EnerPres	; account for cut-off vdW scheme
+; Velocity generation
+gen_vel		= yes		; Velocity generation is on 
+
