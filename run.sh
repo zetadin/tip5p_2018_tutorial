@@ -5,7 +5,7 @@ gmx solvate -cs tip5p.gro -o box.gro -box 2 3 4
 
 # energy minimization
 cd em
-gmx grompp -f ../em.mdp -c ../box.gro -p ../topol.top -o em.tpr -maxwarn 1 > prep0.log 2>&1
+gmx grompp -f em.mdp -c ../box.gro -p ../topol.top -o em.tpr -maxwarn 1 > prep0.log 2>&1
 gmx mdrun -v -s em.tpr -c em.gro > em.log 2>&1
 cd ..
 

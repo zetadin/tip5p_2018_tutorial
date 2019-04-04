@@ -4,3 +4,7 @@
 *.trr
 *.tpr
 *.log
+*.pdb
+*.edr
+\#*
+*/mdout.mdp
