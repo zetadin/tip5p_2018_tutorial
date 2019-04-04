@@ -6,5 +6,6 @@
 *.log
 *.pdb
 *.edr
+*.cpt
 \#*
 */mdout.mdp
